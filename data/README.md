@@ -1,2 +1,4 @@
 
-- ​the three BioMOBS testdata files in 'json' formats can be uploaded to the users Arangodb database. and when called in seperate files in the 'routes/api'endpoints, will allow a try-out of this visual design. This data is analogue to the UK biobank application data but with randomised data.
+- ​The three BioMOBS testdata files in 'json' format can be uploaded to a user's Arangodb database. When all three files are called in seperate files in the 'routes/api' endpoints, they will allow a try-out of this visual design. This data is analogue to the UK biobank application data but with randomised data.
+
+- The .ipynb (python script) is the 'making of' file that shows how a toplogical STAD computation can be done on a cosine distance matrix and how the BiopMOBS_testdata_edges can be stored in ArangoDB through the command line
