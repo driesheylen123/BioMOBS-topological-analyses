@@ -25,15 +25,12 @@ npm install
 ```bash
 npm run dev
 ```
-7. Navigate to [localhost:3000](http://localhost:3000). You should now see the app running.
+7. Navigate to [localhost:3000](http://localhost:3000). This is where you should see the app running once you have put the json files from BioMOBS-topological-analyses
+/data into an ArangoDB databases and linked that database correctly to the visualisations by filling in the connection details in the .env file.
 
 
 
-## Assumptions
-- The data is read from an ArangoDB database.
-- Objects in edge collections have a `source` attribute which is a copy of `_from`, and a `target` which is a copy of `_to`.
-
-## Approach
+## Approach for database connection
 - The database is defined in `src/lib/database.js`.
 - The connection details (host, database name, username, password) are stored in a `.env` file at the root level. This file is _not_ put under source code control obviously, so you'll have to create this file every time you make a clone of this repo. The format of the file looks like this:
 
